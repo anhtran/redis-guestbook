@@ -1,0 +1,55 @@
+/* anhtran [at] Studio Moon9 */
+
+body {
+    font-family: 'Lucida Grande', Arial, sans-serif;
+}
+
+h3 {
+    font-size:16px;
+}
+
+h5 {
+    font-size:13px;
+    margin-bottom:0;
+}
+
+header hgroup {
+    margin-top:20px;
+}
+
+header h1 {
+    margin-bottom:5px;
+}
+
+label {
+    display:inline-block;
+    width:120px;
+    vertical-align:top;
+}
+
+input, textarea {
+    width:300px;
+    font-size:12px;
+    padding:4px 5px;
+}
+
+textarea {
+    height:80px;
+    max-width:300px;
+    min-width:300px;
+    min-height:80px;
+}
+
+button {
+    padding:3px 15px;
+    margin-left:130px;
+}
+
+.loader {
+    display:none;
+}
+
+.error {
+    background: #ffff00;
+    display:none;
+}

@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <title>Guestbook</title>
+    <meta name="description" content="A missing webapp with Redis and Django" />
+
+    <link rel="stylesheet" type="text/css" media="screen" href="{{ STATIC_URL }}css/reset.css" />
+    <link rel="stylesheet" type="text/css" media="screen" href="{{ STATIC_URL }}css/960.css" />
+    <link rel="stylesheet" type="text/css" media="screen" href="{{ STATIC_URL }}css/text.css" />
+    <link rel="stylesheet" type="text/css" media="screen" href="{{ STATIC_URL }}css/style.css" />
+
+{#    <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.5.1/jquery.min.js"></script>#}
+    <script type="text/javascript" src="{{ STATIC_URL }}js/jquery.min.js"></script>
+    <!--[if IE]>
+        <script type="text/javascript" src="http://mooncdn.com/html5.js"></script>
+    <![endif]-->
+</head>
+<body>
+<div class="container_12">
+    <header>
+        <hgroup>
+            <h1>Guestbook</h1>
+            <h3>A missing webapp with Redis and Django</h3>
+        </hgroup>
+        <hr>
+    </header>
+
+    {% block content %}{% endblock %}
+
+    <footer>
+        <hr>
+        <span>&copy; 2011 <a href="http://twitter.info">anhtran</a></span>
+    </footer>
+</div>
+<script type="text/javascript" src="{{ STATIC_URL }}js/screen.js"></script>
+</body>
+</html>

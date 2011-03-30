@@ -1,0 +1,38 @@
+{% extends "base.html" %}
+
+{% block content %}
+    <div class="content">
+        <div class="grid_6">
+            <form method="post" action=".">{% csrf_token %}
+                <div class="form">
+                    <p>
+                        <label for="id_username">Username</label>
+                        <input type="name" id="id_username" required="required" autofocus="autofocus">
+                    </p>
+                    <p>
+                        <label for="id_message">Message</label>
+                        <textarea id="id_message" required="required"></textarea>
+                    </p>
+                    <p>
+                        <button>Submit</button>
+                        <span class="loader"><img src="{{ STATIC_URL }}images/loading.gif" alt="loading..."></span>
+                        <span class="error"></span>
+                    </p>
+                </div>
+            </form>
+        </div>
+        <div class="grid_6">
+            {% if items %}
+                <ul class="items">
+                    {% for i in items %}
+                    <li>
+                        <h5>{{ i.0 }}</h5>
+                        <p>{{ i.1 }}</p>
+                    </li>
+                    {% endfor %}
+                </ul>
+            {% endif %}
+        </div>
+        <div class="clear"></div>
+    </div>
+{% endblock %}
