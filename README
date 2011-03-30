@@ -1,4 +1,4 @@
-# Django Guestbook
+# redis-guestbook
 A simple app using Django and Redis
 ----------------
 
